@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment and tooling files
+.env
+.env.*
+.vscode/
+
+# Test and coverage output
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Streamlit local state
+.streamlit/secrets.toml
