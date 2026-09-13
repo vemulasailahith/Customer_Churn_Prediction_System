@@ -1,6 +1,15 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from sklearn.compose import _column_transformer
+
+
+# Older scikit-learn artifacts reference this private list type during loading.
+if not hasattr(_column_transformer, "_RemainderColsList"):
+    class _RemainderColsList(list):
+        pass
+
+    _column_transformer._RemainderColsList = _RemainderColsList
 
 
 # ---------------------------------------------------------
