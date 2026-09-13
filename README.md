@@ -14,6 +14,7 @@ A Streamlit application that predicts customer churn probability and assigns a c
 ## Requirements
 
 - Python 3.9 or newer
+- scikit-learn 1.6.1, required for compatibility with the included model artifact
 - The included `customer_churn_artifacts.pkl` file
 
 ## Installation
